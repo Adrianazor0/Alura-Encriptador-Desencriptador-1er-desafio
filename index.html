@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link 
+        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Encriptador y desencriptador: 1st Alura challenge</title>
+</head>
+<body>
+    <header>
+        <h1><img class="imagen-logo" src="imagenes/Logo (1).png" alt="Logo de Alura"></h1>
+    </header>
+
+    <main>
+        <textarea class="texto-encriptar" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+        <div>
+            <p><i class="fa-sharp fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acento.</p>
+            <div class="botones">
+                <button class="boton-encriptar">Encriptar</button>
+                <button class="boton-desencriptar">Desencriptar</button>
+            </div>
+        </div>
+    </main>
+
+    <aside>
+        <div class="espacio-resultado">
+            <div id="no-resultado" class="no-resultado">
+                <img class="imagen-busqueda" src="imagenes/Muñeco.png" alt="Imagen de busqueda sin resultados">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div id="pantalla-resultado" class="ocultar resultado">
+                <p id="resultado"></p>
+                <button id="boton-copiar" class="boton-copiar ocultar">Copiar</button>
+            </div>
+        </div>
+    </aside>
+
+    <footer>
+        Hecho por Adrian Azor Miguel para Alura Latam &copy; 2023.
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
